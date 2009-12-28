@@ -131,6 +131,16 @@ def wm_display():
 		if key in processes: wm = wm_dict[key]
         output ('WM', wm)
 
+# Desktop Environment or Window Manager Function
+def de_or_wm_display():
+        for key in de_dict.keys():
+                if key in processes:
+                        output ('DE', de_dict[key])
+                        return
+        for key in wm_dict.keys():
+                if key in processes:
+                        output ('WM', wm_dict[key])
+
 # Packages Function
 def packages_display():
 	p1 = Popen(['pacman', '-Q'], stdout=PIPE)

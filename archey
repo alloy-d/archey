@@ -55,13 +55,13 @@ wm_dict = {'awesome': 'Awesome',
            'fluxbox': 'Fluxbox',
            'fvwm': 'FVWM',
            'icewm': 'icewm',
-           'kwin': 'kwin',
+           'kwin': 'KWin',
            'metacity': 'Metacity',
            'openbox': 'Openbox',
            'wmaker': 'Window Maker',
            'wmii': 'wmii',
            'xfwm4': 'Xfwm',
-           'xmonad': 'Xmonad'}
+           'xmonad': 'xmonad'}
 
 # Find running processes.
 p1 = Popen(['ps', '-A'], stdout=PIPE).communicate()[0].split('\n')
